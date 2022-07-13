@@ -6,6 +6,7 @@
 2. nav
 3. banner
 4. icon
+5. Work Experience
 
 
 
@@ -121,3 +122,60 @@ nav .menu a:hover,nav .contact a:hover{
 .icon .icon-content{
     padding: 50px 0;
 }
+
+/* Work Experience Starts */
+#work {
+    background: #222A36;
+    padding: 100px 0;
+}
+#work .work_year{
+    width: 25%;
+}
+#work .work_year h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120%;
+    color: var(--box_bgc);
+}
+#work .work_year h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 180%;
+    color: var(--txt_color);
+}
+#work .work_detail{
+    width: 75%;
+}
+#work .work_detail h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 180%;
+    padding-bottom: 30px;
+    color: var(--txt_color);
+}
+#work .work_detail .row{
+    justify-content: space-between;
+}
+#work .work_detail .work_name{
+    width: 30%;
+    padding: 175px 0 35px 30px;
+    background-color: #C4C4C4;
+    transition: all linear 0.5s;
+}
+#work .work_detail .work_name:hover{
+    background-color: var(--box_bgc);
+}
+#work .work_detail .work_name h6{
+    color: #222A36;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    transition: all linear 0.5s;
+}
+#work .work_detail .work_name h6:hover{
+    color: var(--txt_color);
+}
+/* Work Experience Ends */
