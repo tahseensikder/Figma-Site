@@ -1,0 +1,123 @@
+/* Table of Content  */
+/* ================================ */
+
+/* 
+1. Common Style
+2. nav
+3. banner
+4. icon
+
+
+
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+ol,ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body {
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --background: rgba(34, 42, 54, 0.95);
+    --txt_color: #FFFFFF;
+    --box_bgc: #676CDB;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align_center{
+    align-items: center;
+}
+/* Nav Section */
+nav {
+    position: absolute;
+    width: 100%;
+    padding: 15px 0;
+}
+nav .container .row{
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo img{
+    display: block;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav a {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--txt_color);
+}
+nav .menu a, nav .contact a{
+    padding: 10px 20px;
+    transition: all linear 0.5s;
+} 
+nav .menu a:hover,nav .contact a:hover{
+    background-color: var(--box_bgc);
+}
+/* Nav Section */
+/* banner Starts */
+#banner {
+    background-size: cover;
+    height: 743px;
+}
+#banner .container,#banner .row{
+    height: 100%;
+}
+#banner .banner-content h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 120%;
+    color: var(--txt_color);
+}
+#banner .banner-content p{
+    width: 40%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+#banner .banner-content a{
+    padding: 10px 20px;
+    color: var(--txt_color);
+    transition: all linear 0.5s;
+}
+#banner .banner-content a:hover{
+    background-color: var(--box_bgc);
+}
+
+#banner .banner-content a i{
+    padding: 0 8px;
+    color: var(--txt_color);
+}
+/* banner ends */ 
+
+.icon {
+    background-color: black;
+}
+.icon .row{
+    justify-content: space-between;
+}
+.icon .icon-content{
+    padding: 50px 0;
+}
