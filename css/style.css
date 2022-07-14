@@ -7,6 +7,9 @@
 3. banner
 4. icon
 5. Work Experience
+6. review
+7. Contact
+8. footer
 
 
 
@@ -98,6 +101,9 @@ nav .menu a:hover,nav .contact a:hover{
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 30px;
 }
+#banner .banner-content p span{
+    color: var(--txt_color);
+}
 #banner .banner-content a{
     padding: 10px 20px;
     color: var(--txt_color);
@@ -165,6 +171,9 @@ nav .menu a:hover,nav .contact a:hover{
     background-color: #C4C4C4;
     transition: all linear 0.5s;
 }
+#work .work_detail .work_name i{
+    font-size: 20px;
+}
 #work .work_detail .work_name:hover{
     background-color: var(--box_bgc);
 }
@@ -175,7 +184,132 @@ nav .menu a:hover,nav .contact a:hover{
     line-height: 120%;
     transition: all linear 0.5s;
 }
-#work .work_detail .work_name h6:hover{
+#work .work_detail .work_name:hover h6{
     color: var(--txt_color);
 }
 /* Work Experience Ends */
+#review{
+    background-color: #222A36;
+    padding: 100px 0;
+}
+#review .info01{
+    width: 34%;
+}
+#review .info01 img{
+    display: block;
+}
+#review .info02{
+    width: 36%;
+    padding-left: 10px;
+}
+#review .info02 h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120%;
+    color: #C4C4C4;
+    margin: 0 0 -40px 0;
+}
+#review .info02 p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+#review .info02 a{
+    padding-right: 15px;
+    font-size: 24px;
+    color: #676CDB;
+}
+#review .info03{
+    width: 30%;
+    text-align: right;
+}
+#review .info03 h4{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+#review .info03 h6{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #676CDB
+}
+/* Contact Starts here */
+#contact{
+    background-color: #000000;
+    padding: 100px 0;
+}
+#contact .connect{
+    width: 70%;
+}
+#contact .connect h2{
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120%;
+    color: var(--txt_color);
+    padding-bottom: 30px;
+}
+#contact .connect ul li{
+    display: inline-block;
+    padding-right: 50px;
+}
+#contact .connect ul li a i{
+    color: var(--txt_color);
+    font-size: 20px;
+    transition: all linear 0.5s;
+}
+#contact .connect ul li:hover a i{
+    color: var(--box_bgc);
+}
+#contact .contact_form{
+    width: 30%;
+    color: white;
+}
+#contact .contact_form label{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+}
+#contact .contact_form input{
+    height: 100px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+
+}
+#contact .contact_form input:last-child{
+    color: #676CDB;
+    text-align: left;
+    height: fit-content;
+    width: fit-content;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+}
+/* Footer starts here */
+footer{
+    padding: 50px 0;
+    background-color: #000000;
+}
+footer h4{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.3px;
+}
+footer h4 span{
+    color: var(--txt_color);
+}
