@@ -97,7 +97,16 @@ nav .menu a:hover,nav .contact a:hover{
     left: 0;
     z-index: 999;
     width: 100%;
+    background-color: var(--box_bgc);
     animation: smooth 0.5s;
+}
+@keyframes smooth {
+    0%{
+        top: -50px;
+    }
+    100%{
+        top: 0;
+    }
 }
 
 /* Nav Section */
@@ -141,7 +150,7 @@ nav .menu a:hover,nav .contact a:hover{
     color: var(--txt_color);
 }
 /* banner ends */ 
-
+/* Icon Starts here */
 .icon {
     background-color: black;
 }
@@ -151,7 +160,15 @@ nav .menu a:hover,nav .contact a:hover{
 .icon .icon-content{
     padding: 50px 0;
 }
-
+.icon .icon-content i{
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all linear 0.5s;
+}
+.icon .icon-content i:hover{
+    color: var(--box_bgc);
+}
+/* Icon Ends Here */
 /* Work Experience Starts */
 #work {
     background: #222A36;
@@ -212,7 +229,7 @@ nav .menu a:hover,nav .contact a:hover{
 }
 /* Work Experience Ends */
 #review{
-    background-color: #222A36;
+    background-color: rgba(34, 42, 54, 0.95);
     padding: 100px 0;
 }
 #review .info01{
@@ -244,6 +261,10 @@ nav .menu a:hover,nav .contact a:hover{
     padding-right: 15px;
     font-size: 24px;
     color: #676CDB;
+    transition: all linear 0.5s;
+}
+#review .info02 a:hover{
+    color: var(--txt_color);
 }
 #review .info03{
     width: 30%;
@@ -256,6 +277,7 @@ nav .menu a:hover,nav .contact a:hover{
     font-size: 30px;
     line-height: 120%;
     color: #FFFFFF;
+    padding: 10px 0;
 }
 #review .info03 h6{
     font-family: 'Playfair Display';
@@ -271,7 +293,7 @@ nav .menu a:hover,nav .contact a:hover{
     padding: 100px 0;
 }
 #contact .connect{
-    width: 70%;
+    width: 65%;
 }
 #contact .connect h2{
     font-weight: 700;
@@ -293,21 +315,24 @@ nav .menu a:hover,nav .contact a:hover{
     color: var(--box_bgc);
 }
 #contact .contact_form{
-    width: 30%;
+    width: 35%;
     color: white;
 }
 #contact .contact_form label{
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 120%;
 }
 #contact .contact_form input{
-    height: 100px;
+    height: 70px;
     width: 100%;
     outline: none;
     border: none;
     background: transparent;
     color: white;
+    margin: 8px 0;
+    border: solid 0.5px #212121;
+    border-radius: 5px;
 
 }
 #contact .contact_form input:last-child{
@@ -319,11 +344,12 @@ nav .menu a:hover,nav .contact a:hover{
     border: none;
     background: transparent;
     font-size: 30px;
+    cursor: pointer;
 }
 /* Footer starts here */
 footer{
-    padding: 50px 0;
-    background-color: #000000;
+    padding: 35px 0;
+    background-color: #0c0c0c;
 }
 footer h4{
     text-align: center;
