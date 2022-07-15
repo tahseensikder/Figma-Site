@@ -11,10 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Preloader starts -->
+    <div class="preloader">
+        <img src="./img/loader.gif" alt="">
+    </div>
+    <!-- Preloader ends -->
     <!-- nav starts here -->
     <nav>
         <div class="container">
@@ -44,7 +50,9 @@
         <div class="container">
             <div class="row align_center">
                 <div class="banner-content">
-                    <h4>
+                    <h4 data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         Hello!<br>I’m Zarror Nibors
                     </h4>
                     <p>
@@ -169,6 +177,10 @@
         <h4>Created by <span>Zarror</span> | All Reserved!</h4>
     </footer>
     <!-- Footer ends here -->
+    <!-- BackToTop Button -->
+    <button class="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- BackToTop Button -->
+    <script src="js/aos.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/app.js"></script>
 </body>
