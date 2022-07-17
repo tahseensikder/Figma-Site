@@ -14,19 +14,6 @@ $(function(){
     })
 
     //backToTop
-    // $(window).on('scroll',function(){
-    //     if($(this).scrollTop() > 300){
-    //      $('.backToTop').fadeIn(1000);
-    //     }
-    //     else {
-    //      $('.backToTop').fadeOut(1000);
-    //     }
-    // })
-    // $('.backToTop').on('click',function(){
-    //     $('html,body').animate({
-    //         scrollTop:0,
-    //     },1000)
-    // })
     $(window).on('scroll',function(){
         if($(this).scrollTop() > 300){
             $('.backToTop').fadeIn(1000)
@@ -40,7 +27,6 @@ $(function(){
             scrollTop:0
         },1000)
     })
-
 })
 AOS.init();
 
